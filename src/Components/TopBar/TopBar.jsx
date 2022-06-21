@@ -4,8 +4,8 @@ import avatar from "../../assets/images/Avatar.png";
 import downarrow from "../../assets/images/downarrow.png";
 const TopBar = ({ show }) => {
   return (
-    <div className=" flex justify-between items-center">
-      <h1 className="font-[600] text-[24px] text-primary">hello world</h1>
+    <div className=" flex justify-between items-center py-8">
+      <h1 className="font-[600] text-[24px] text-primary">Home</h1>
       <div className="flex items-center">
         <div className="mr-10">
           <img src={toggle} alt="togglebtn" />

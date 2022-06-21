@@ -17,7 +17,7 @@ const SideNavbar = ({ show, setShow }) => {
         show ? "w-[264px]" : "w-[96px]"
       } z-10 items-start fixed text-secondary h-screen bg-[#FFFFFF]  smooth-transition`}
     >
-      <div className="h-32 pt-10">
+      <div className="h-32 pt-6">
         {!show && (
           <img
             onClick={() => setShow(!show)}
