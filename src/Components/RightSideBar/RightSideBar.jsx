@@ -1,6 +1,7 @@
 import React from "react";
 import TopBar from "../TopBar/TopBar.jsx";
 import Banner from "./Banner.jsx";
+import PatientInfo from "./PatientInfo.jsx";
 
 const RightSideBar = ({ show }) => {
   return (
@@ -13,6 +14,7 @@ const RightSideBar = ({ show }) => {
       <div className="flex justify-between gap-16">
         <div className="basis-3/5">
           <Banner />
+          <PatientInfo />
         </div>
         <div className="basis-2/5 bg-green-400">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error cum
