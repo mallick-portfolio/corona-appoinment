@@ -31,7 +31,7 @@ const SideNavbar = ({ show, setShow }) => {
             <img className="mr-8 ml-10" src={logo} alt="logo" />
             <img className="w-[106px] h-[34px]" src={brand} alt="brand" />
             <img
-              className="absolute -right-6 z-50"
+              className="absolute -right-5 cursor-pointer z-50"
               onClick={() => setShow(!show)}
               src={sideArrow}
               alt="sideArrow"
