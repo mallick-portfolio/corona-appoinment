@@ -1,7 +1,13 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        mygreen: "#03922B",
+        hotPink: "#FF7594",
+        orangePeach: "#FF7C65",
+      },
+    },
   },
   plugins: [require("daisyui")],
   daisyui: {
@@ -12,7 +18,6 @@ module.exports = {
           secondary: "#2E1619",
           accent: "#8A8686",
           neutral: "#E0E0E0",
-          mygreen: "#03922B",
           "base-100": "#ffffff",
         },
       },

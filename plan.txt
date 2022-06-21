@@ -3,3 +3,5 @@ secondary-color: #2E1619
 accent-color: #8A8686
 neutral-color: #E0E0E0
 mygreen-color: #03922B
+hotPink :#FF7594
+orangePeach :#FF7C65
