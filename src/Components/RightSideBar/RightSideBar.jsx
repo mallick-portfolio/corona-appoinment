@@ -2,11 +2,12 @@ import React from "react";
 import TopBar from "../TopBar/TopBar.jsx";
 import Banner from "./Banner.jsx";
 import PatientInfo from "./PatientInfo.jsx";
+import TodoList from "./TodoList.jsx";
 
 const RightSideBar = ({ show }) => {
   return (
     <div
-      className={`smooth-transition bg-[#E5E5E5] min-h-screen px-6 text-white ${
+      className={`smooth-transition bg-[#E5E5E5] min-h-screen px-6 text-white pb-60 ${
         !show ? "ml-24" : "ml-64 pl-12"
       }`}
     >
@@ -15,6 +16,8 @@ const RightSideBar = ({ show }) => {
         <div className="basis-3/5">
           <Banner />
           <PatientInfo />
+          <TodoList />
+          
         </div>
         <div className="basis-2/5 bg-green-400">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error cum
