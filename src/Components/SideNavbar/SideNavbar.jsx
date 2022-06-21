@@ -12,7 +12,7 @@ import defaultbtn from "../../assets/images/Default.png";
 
 const SideNavbar = ({ show, setShow }) => {
   return (
-    <section
+    <aside
       className={`${
         show ? "w-[264px]" : "w-[96px]"
       } z-10 items-start fixed text-secondary h-screen bg-[#FFFFFF]  smooth-transition`}
@@ -48,38 +48,38 @@ const SideNavbar = ({ show, setShow }) => {
           </li>
           <li className="flex items-center py-2">
             <img className="mr-10 ml-8" src={profile} alt="Patient Profile" />
-            <span className="text-[#FF7594] whitespace-nowrap">
+            <span className="text-[#2E1619] whitespace-nowrap">
               Patient Profile
             </span>
           </li>
           <li className="flex items-center py-2">
             <img className="mr-10 ml-8" src={appoinments} alt="Appointments" />
-            <span className="text-[#FF7594] whitespace-nowrap">
+            <span className="text-[#2E1619] whitespace-nowrap">
               Appointments
             </span>
           </li>
           <li className="flex items-center py-2">
             <img className="mr-10 ml-8" src={history} alt="Medical History" />
-            <span className="text-[#FF7594] whitespace-nowrap">
+            <span className="text-[#2E1619] whitespace-nowrap">
               Medical History
             </span>
           </li>
           <li className="flex items-center py-2">
             <img className="mr-10 ml-8" src={setting} alt="Settings" />
-            <span className="text-[#FF7594] whitespace-nowrap">Settings</span>
+            <span className="text-[#2E1619] whitespace-nowrap">Settings</span>
           </li>
         </ul>
       </nav>
-      <div className="flex items-center mt-24 ">
+      <div className="flex justify-center w-full mt-24 smooth-transition">
         {!show ? (
-          <img className="ml-6" src={defaultbtn} alt="add appoinment" />
+          <img src={defaultbtn} alt="add appoinment" />
         ) : (
-          <button className="px-4 py-4 text-white text-[14px] rounded-md ml-8 whitespace-nowrap bg-gradient-to-r from-hotPink to-orangePeach">
+          <button className="px-4 py-4 text-white text-[14px] rounded-md whitespace-nowrap bg-gradient-to-r from-hotPink to-orangePeach">
             New appointment
           </button>
         )}
       </div>
-    </section>
+    </aside>
   );
 };
 
