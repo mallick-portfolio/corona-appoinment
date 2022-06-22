@@ -2,7 +2,7 @@ import React from "react";
 import sample2 from "../../assets/images/Svg_sample2.png";
 const CovidUpdate = () => {
   return (
-    <div className=" my-2 bg-white  px-4 py-5 pt-4 rounded-md border-[#EDEBEB] border-2 pr-2">
+    <div className=" my-2 bg-white  pl-4 pr-8 py-5 pt-4 rounded-md border-[#EDEBEB] border-2">
       <div className="flex justify-between items-center">
         <div>
           <h3 className="text-[#2E1619] font-medium text-[14px]">
@@ -20,11 +20,25 @@ const CovidUpdate = () => {
         <div className="w-1/2">
           <img src={sample2} alt="" />
         </div>
-        <div className="bg-red-500 w-1/2 h-[190px] overflow-y-auto">
-          <div>
-            <h4>Infection Number</h4>
-            <h4>500</h4>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam in cumque delectus laborum, dolorum ex id doloremque dolores architecto debitis corporis, unde dolore aliquam repudiandae culpa? Quo sit id dolorem minus! Illo id officiis iure ex quo suscipit libero error minus molestiae autem praesentium voluptas nam deleniti aspernatur dolorum modi fugit inventore reiciendis pariatur deserunt, sint molestias numquam unde. Provident, eaque. Magnam, debitis sit voluptates accusantium nemo dolores vitae rem? Voluptatem aut, eum cum expedita magnam porro. Ducimus, nesciunt. Officia cupiditate atque autem harum in, reiciendis illum odit necessitatibus et, recusandae tempora facilis voluptate expedita quibusdam iste error dignissimos nostrum?
+        <div
+          className="bg-gradient-to-r from-hotPink to-orangePeach w-1/2 h-[190px] overflow-y-scroll text-center text-[#FBFBFB] font-medium rounded-md"
+          id="style-2"
+        >
+          <div className="pt-4 pb-2">
+            <h4 className="text-[14px]">Infection Number</h4>
+            <h4 className="text-[34px]">500</h4>
+          </div>
+          <div className="pt-4 pb-2">
+            <h4 className="text-[14px]">Infection Rate</h4>
+            <h4 className="text-[34px]">10%</h4>
+          </div>
+          <div className="pt-4 pb-2">
+            <h4 className="text-[14px]">Total Infection</h4>
+            <h4 className="text-[34px]">500,000</h4>
+          </div>
+          <div className="pt-4 pb-2">
+            <h4 className="text-[14px]">Number Of Death</h4>
+            <h4 className="text-[34px]">20</h4>
           </div>
         </div>
       </div>

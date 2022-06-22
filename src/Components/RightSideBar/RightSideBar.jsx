@@ -9,7 +9,7 @@ import UpCommingEvent from "./UpCommingEvent.jsx";
 const RightSideBar = ({ show }) => {
   return (
     <div
-      className={`smooth-transition bg-[#E5E5E5] min-h-screen px-6 text-white pb-20 ${
+      className={`smooth-transition bg-[#E5E5E5] min-h-screen px-6 text-white pb-12 ${
         !show ? "ml-24" : "ml-64 pl-12"
       }`}
     >

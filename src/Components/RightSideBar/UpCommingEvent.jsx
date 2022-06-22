@@ -6,7 +6,7 @@ const UpCommingEvent = () => {
       <h1 className="text-primary text-[16px] font-medium mb-8">
         Upcoming Appointments
       </h1>
-      <div className="flex items-center  rounded-lg mx-4 my-8">
+      <div className="flex items-center  rounded-lg mx-4 my-4">
         <div className="bg-white p-4 rounded-lg z-50 border-[#EDEBEB] border-2">
           <h5 className="text-secondary text-[13px]">2022</h5>
           <h4 className="text-secondary py-2 text-[20px]">13</h4>
@@ -29,7 +29,7 @@ const UpCommingEvent = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center  rounded-lg mx-4 my-8">
+      <div className="flex items-center  rounded-lg mx-4 my-4">
         <div className="bg-white p-4 rounded-lg z-50 border-[#EDEBEB] border-2">
           <h5 className="text-secondary text-[13px]">2022</h5>
           <h4 className="text-secondary py-2 text-[20px]">13</h4>
@@ -52,7 +52,7 @@ const UpCommingEvent = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center  rounded-lg mx-4 my-8">
+      <div className="flex items-center  rounded-lg mx-4 my-4">
         <div className="bg-white p-4 rounded-lg z-50 border-[#EDEBEB] border-2">
           <h5 className="text-secondary text-[13px]">2022</h5>
           <h4 className="text-secondary py-2 text-[20px]">13</h4>
@@ -75,7 +75,7 @@ const UpCommingEvent = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center  rounded-lg mx-4 my-8">
+      <div className="flex items-center  rounded-lg mx-4 my-4">
         <div className="bg-white p-4 rounded-lg z-50 border-[#EDEBEB] border-2">
           <h5 className="text-secondary text-[13px]">2022</h5>
           <h4 className="text-secondary py-2 text-[20px]">13</h4>

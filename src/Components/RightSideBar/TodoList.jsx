@@ -3,7 +3,7 @@ import uncheck from "../../assets/images/Mask.png";
 import Todos from "./Todos.jsx";
 const TodoList = () => {
   return (
-    <div className="bg-white px-4 pb-24 pt-4 rounded-md">
+    <div className="bg-white px-4 pb-28 pt-8 rounded-md">
       <h1 className="text-secondary text-[16px] font-medium mb-2">
         To-Do List
       </h1>

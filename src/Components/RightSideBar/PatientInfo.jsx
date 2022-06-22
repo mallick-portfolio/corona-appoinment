@@ -6,7 +6,7 @@ import bubble from "../../assets/images/Icon_bubble.png";
 import sugar from "../../assets/images/Icon_Blood_sugar.png";
 const PatientInfo = () => {
   return (
-    <div className="my-6">
+    <div className="my-8">
       <div className="grid grid-cols-4 gap-6">
         <div className="shadow-lg bg-white pl-3 py-3 rounded-md">
           <img src={heart} alt="" />
