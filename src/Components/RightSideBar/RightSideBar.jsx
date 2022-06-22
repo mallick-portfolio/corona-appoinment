@@ -1,6 +1,7 @@
 import React from "react";
 import TopBar from "../TopBar/TopBar.jsx";
 import Banner from "./Banner.jsx";
+import CovidUpdate from "./CovidUpdate.jsx";
 import PatientInfo from "./PatientInfo.jsx";
 import TodoList from "./TodoList.jsx";
 import UpCommingEvent from "./UpCommingEvent.jsx";
@@ -20,8 +21,9 @@ const RightSideBar = ({ show }) => {
           <TodoList />
           
         </div>
-        <div className="basis-2/5 pl-4 py-5 pt-4 bg-white rounded-md">
+        <div className="basis-2/5 rounded-md">
           <UpCommingEvent />
+          <CovidUpdate />
         </div>
       </div>
     </div>

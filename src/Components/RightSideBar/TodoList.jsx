@@ -11,7 +11,7 @@ const TodoList = () => {
         <div>
           <input
             type="text"
-            className="w-[550px] h-[76px] pl-4 rounded-md border[#EDEBEB] border-2 outline-none text-secondary"
+            className="w-[650px] h-[76px] pl-4 rounded-md border[#EDEBEB] border-2 outline-none text-secondary"
           />
         </div>
         <div className="ml-4">
