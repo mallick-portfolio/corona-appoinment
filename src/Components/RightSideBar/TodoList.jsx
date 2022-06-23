@@ -7,8 +7,7 @@ const TodoList = () => {
       <h1 className="text-secondary text-[16px] font-medium mb-2">
         To-Do List
       </h1>
-      <div className="
-      ">
+      <div className="flex justify-between">
         <div>
           <input
             type="text"
