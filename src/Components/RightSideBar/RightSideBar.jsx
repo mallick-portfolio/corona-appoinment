@@ -14,12 +14,11 @@ const RightSideBar = ({ show }) => {
       }`}
     >
       <TopBar show={show} />
-      <div className="flex justify-between gap-16">
+      <div className={`flex justify-between ${show ? "gap-4" : "gap-16"}`}>
         <div className="basis-3/5">
           <Banner />
           <PatientInfo />
           <TodoList />
-          
         </div>
         <div className="basis-2/5 rounded-md">
           <UpCommingEvent />

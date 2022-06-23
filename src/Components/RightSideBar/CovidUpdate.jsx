@@ -2,7 +2,7 @@ import React from "react";
 import sample2 from "../../assets/images/Svg_sample2.png";
 const CovidUpdate = () => {
   return (
-    <div className=" my-2 bg-white  pl-4 pr-8 py-5 pt-4 rounded-md border-[#EDEBEB] border-2">
+    <div className=" my-2 bg-white  px-4 py-5 pt-4 rounded-md border-[#EDEBEB] border-2">
       <div className="flex justify-between items-center">
         <div>
           <h3 className="text-[#2E1619] font-medium text-[14px]">
@@ -21,8 +21,7 @@ const CovidUpdate = () => {
           <img src={sample2} alt="" />
         </div>
         <div
-          className="bg-gradient-to-r from-hotPink to-orangePeach w-1/2 h-[190px] overflow-y-scroll text-center text-[#FBFBFB] font-medium rounded-md"
-          id="style-2"
+          className="bg-gradient-to-r from-hotPink to-orangePeach w-1/2 h-[190px] overflow-y-scroll text-center text-[#FBFBFB] font-medium rounded-md upcomming-appoinment"
         >
           <div className="pt-4 pb-2">
             <h4 className="text-[14px]">Infection Number</h4>
