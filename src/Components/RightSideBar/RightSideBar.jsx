@@ -10,18 +10,31 @@ const RightSideBar = ({ show }) => {
   return (
     <div
       className={`smooth-transition bg-[#E5E5E5] min-h-screen px-6 text-white pb-12 ${
-        !show ? "ml-24  pl-8" : "ml-64 pl-6"
+        !show
+          ? "lg:ml-24 lg:pl-8 md:ml-20 md:pl-8"
+          : "lg:ml-64 lg:pl-6  md:ml-20 md:pl-8"
       }`}
     >
       <TopBar show={show} />
-      <div className={`flex justify-between ${show ? "gap-4" : "gap-16"}`}>
+      <div
+        className={`lg:flex justify-between ${show ? "lg:gap-4" : "lg:gap-16"}`}
+      >
         <div className="basis-3/5">
           <Banner />
           <PatientInfo />
-          <TodoList />
+          <div className="flex md:gap-2">
+            <div className="w-1/2">
+              <TodoList />
+            </div>
+            <div className="lg:hidden md:block w-1/2">
+              <UpCommingEvent />
+            </div>
+          </div>
         </div>
         <div className="basis-2/5 rounded-md">
-          <UpCommingEvent />
+          <div className="md:hidden">
+            <UpCommingEvent />
+          </div>
           <CovidUpdate />
         </div>
       </div>

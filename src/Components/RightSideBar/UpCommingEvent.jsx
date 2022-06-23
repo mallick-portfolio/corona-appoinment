@@ -6,8 +6,8 @@ const UpCommingEvent = () => {
       <h1 className="text-primary text-[16px] pl-4 font-medium mb-4">
         Upcoming Appointments
       </h1>
-      <div className="h-[590px] overflow-y-scroll text-center text-[#FBFBFB] font-medium rounded-md upcomming-appoinment">
-        <ul className="relative upcomming-item px-4">
+      <div className="lg:h-[590px] md:h-[550px] overflow-y-scroll text-center text-[#FBFBFB] font-medium rounded-md upcomming-appoinment">
+        <ul className="relative upcomming-item lg:px-4 md:px-1">
           {appoinments.map((appoinment) => (
             <li key={appoinment.id} className="relative upcomming-list">
               <div
@@ -25,7 +25,7 @@ const UpCommingEvent = () => {
                     {appoinment.month}
                   </h3>
                 </div>
-                <div className="rounded-md border-2 border-[#FDDAD6] py-4 -ml-5 pl-6 z-0 w-full bg-[#FFF5F5] text-left">
+                <div className="rounded-md border-2 border-[#FDDAD6] lg:py-4 md:py-1 -ml-5 pl-6 z-0 w-full bg-[#FFF5F5] text-left">
                   <h3 className="text-[#384449] font-medium text-[16px]">
                     {appoinment.doctor}
                   </h3>
