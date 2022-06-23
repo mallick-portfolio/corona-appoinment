@@ -23,16 +23,16 @@ const RightSideBar = ({ show }) => {
           <Banner />
           <PatientInfo />
           <div className="flex md:gap-2">
-            <div className="w-1/2">
+            <div className="md:w-1/2 lg:w-full">
               <TodoList />
             </div>
-            <div className="lg:hidden md:block w-1/2">
+            <div className="lg:hidden md:block md:w-1/2 lg:w-full">
               <UpCommingEvent />
             </div>
           </div>
         </div>
         <div className="basis-2/5 rounded-md">
-          <div className="md:hidden">
+          <div className="md:hidden lg:block">
             <UpCommingEvent />
           </div>
           <CovidUpdate />
