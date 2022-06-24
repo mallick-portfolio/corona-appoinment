@@ -70,7 +70,7 @@ const SideNavbar = ({ show, setShow }) => {
           </li>
         </ul>
       </nav>
-      <div className="flex justify-center w-full md:mt-60 lg:mt-96 smooth-transition">
+      <div className="flex justify-center w-full mt-48 md:mt-60 lg:mt-96 smooth-transition">
         {!show ? (
           <img src={defaultbtn} alt="add appoinment" />
         ) : (

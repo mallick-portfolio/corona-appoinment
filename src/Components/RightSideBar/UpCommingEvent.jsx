@@ -2,7 +2,7 @@ import React from "react";
 
 const UpCommingEvent = () => {
   return (
-    <div className=" border-2 border-[#EDEBEB] bg-white  rounded-md pt-4">
+    <div className=" border-2 px-6 sm:px-0 border-[#EDEBEB] bg-white  rounded-md pt-4">
       <h1 className="text-primary text-[16px] pl-4 font-medium mb-4">
         Upcoming Appointments
       </h1>
@@ -11,10 +11,10 @@ const UpCommingEvent = () => {
           {appoinments.map((appoinment) => (
             <li key={appoinment.id} className="relative upcomming-list">
               <div
-                className={`absolute w-[25px] z-50 h-[25px] ${appoinment.color} rounded-full -left-2 top-1/2 border-[5px] border-white`}
+                className={`absolute w-[25px] z-10 h-[25px] ${appoinment.color} rounded-full -left-2 top-1/2 border-[5px] border-white`}
               ></div>
               <div className="flex items-center  rounded-lg mx-4 my-4">
-                <div className="bg-white sm:p-4 p-2 rounded-lg z-50 border-[#EDEBEB] border-2">
+                <div className="bg-white sm:p-4 p-2 rounded-lg z-10 border-[#EDEBEB] border-2">
                   <h5 className="text-secondary text-[13px]">
                     {appoinment.year}
                   </h5>

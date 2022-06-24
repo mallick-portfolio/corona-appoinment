@@ -54,6 +54,6 @@
     position: fixed;
     top: 0;
     background-image: linear-gradient(to right, #FF7594 , #FF7C65);
-    z-index: 10;
+    z-index: 40;
   }
 }

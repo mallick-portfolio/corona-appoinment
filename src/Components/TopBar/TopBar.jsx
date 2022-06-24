@@ -6,7 +6,7 @@ import Icon_Menu from "../../assets/images/Icon_Menu.png";
 const TopBar = ({ show, setShow }) => {
   console.log(show)
   return (
-    <div className="header-fixed w-full flex justify-between items-center py-6 px-4 sm:px-0">
+    <div className="header-fixed w-full flex justify-between items-center py-6 px-4 z-50 sm:px-0">
       <div className="block sm:hidden">
         {!show && (
           <img
