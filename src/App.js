@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="overflow-hidden">
       <SideNavbar setShow={setShow} show={show} />
-      <RightSideBar show={show} />
+      <RightSideBar setShow={setShow} show={show} />
     </div>
   );
 }

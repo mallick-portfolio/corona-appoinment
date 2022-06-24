@@ -6,23 +6,23 @@ import PatientInfo from "./PatientInfo.jsx";
 import TodoList from "./TodoList.jsx";
 import UpCommingEvent from "./UpCommingEvent.jsx";
 
-const RightSideBar = ({ show }) => {
+const RightSideBar = ({ show, setShow }) => {
   return (
     <div
-      className={`smooth-transition bg-[#E5E5E5] min-h-screen px-6 text-white pb-12 ${
+      className={`smooth-transition sm:bg-[#E5E5E5] min-h-screen sm:px-6 text-white pb-12 ${
         !show
           ? "lg:ml-24 lg:pl-8 md:ml-20 md:pl-8"
           : "lg:ml-64 lg:pl-6  md:ml-20 md:pl-8"
       }`}
     >
-      <TopBar show={show} />
+      <TopBar show={show} setShow={setShow} />
       <div
         className={`lg:flex justify-between ${show ? "lg:gap-4" : "lg:gap-16"}`}
       >
         <div className="basis-3/5">
           <Banner />
           <PatientInfo />
-          <div className="flex md:gap-2">
+          <div className="flex flex-col-reverse md:flex-row md:gap-2">
             <div className="md:w-1/2 lg:w-full">
               <TodoList />
             </div>
@@ -32,7 +32,7 @@ const RightSideBar = ({ show }) => {
           </div>
         </div>
         <div className="basis-2/5 rounded-md">
-          <div className="md:hidden lg:block">
+          <div className="hidden lg:block">
             <UpCommingEvent />
           </div>
           <CovidUpdate />

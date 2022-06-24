@@ -38,14 +38,22 @@
   position: absolute;
   width: 1px;
   height: calc(100% - 130px);
-  background-color: #EDEBEB;
+  background-color: #edebeb;
   z-index: 0;
 }
 
-@media (min-width: 834px) { 
+@media (min-width: 834px) {
   .upcomming-item::after {
     content: "";
     left: 8px;
     width: 1px;
   }
- }
+}
+@media (max-width: 390px) {
+  .header-fixed {
+    position: fixed;
+    top: 0;
+    background-image: linear-gradient(to right, #FF7594 , #FF7C65);
+    z-index: 10;
+  }
+}

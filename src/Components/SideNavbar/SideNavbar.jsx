@@ -14,14 +14,14 @@ const SideNavbar = ({ show, setShow }) => {
   return (
     <aside
       className={`${
-        show ? "w-[264px]" : "w-[96px]"
-      } z-10 items-start fixed text-secondary h-screen bg-[#FFFFFF]  smooth-transition`}
+        show ? "w-[264px] left-0" : "w-[96px] -left-24"
+      } z-50 items-start fixed sm:left-0 text-secondary h-screen bg-[#FFFFFF]  smooth-transition`}
     >
       <div className="h-32 pt-6">
         {!show && (
           <img
             onClick={() => setShow(!show)}
-            className="absolute left-1/2 -translate-x-1/2 cursor-pointer"
+            className="absolute  left-1/2 -translate-x-1/2 cursor-pointer"
             src={Icon_Menu}
             alt="menu icon"
           />
@@ -70,7 +70,7 @@ const SideNavbar = ({ show, setShow }) => {
           </li>
         </ul>
       </nav>
-      <div className="flex justify-center w-full mt-96 smooth-transition">
+      <div className="flex justify-center w-full md:mt-60 lg:mt-96 smooth-transition">
         {!show ? (
           <img src={defaultbtn} alt="add appoinment" />
         ) : (

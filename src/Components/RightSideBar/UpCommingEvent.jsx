@@ -14,11 +14,11 @@ const UpCommingEvent = () => {
                 className={`absolute w-[25px] z-50 h-[25px] ${appoinment.color} rounded-full -left-2 top-1/2 border-[5px] border-white`}
               ></div>
               <div className="flex items-center  rounded-lg mx-4 my-4">
-                <div className="bg-white p-4 rounded-lg z-50 border-[#EDEBEB] border-2">
+                <div className="bg-white sm:p-4 p-2 rounded-lg z-50 border-[#EDEBEB] border-2">
                   <h5 className="text-secondary text-[13px]">
                     {appoinment.year}
                   </h5>
-                  <h4 className="text-secondary py-2 text-[20px]">
+                  <h4 className="text-secondary py-1 sm:py-2 text-[20px]">
                     {appoinment.date}
                   </h4>
                   <h3 className="text-secondary text-[20px]">
@@ -29,7 +29,7 @@ const UpCommingEvent = () => {
                   <h3 className="text-[#384449] font-medium text-[16px]">
                     {appoinment.doctor}
                   </h3>
-                  <h4 className="text-secondary text-[13px] pt-1 pb-3">
+                  <h4 className="text-secondary text-[13px] pt-1 sm:pb-3">
                     {appoinment.specialist}
                   </h4>
                   <div className="flex items-center gap-4">

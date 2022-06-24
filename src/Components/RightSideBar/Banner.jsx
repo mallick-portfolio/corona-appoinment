@@ -2,7 +2,7 @@ import React from "react";
 import sample1 from "../../assets/images/Svg_sample1.png";
 const Banner = () => {
   return (
-    <div className="flex justify-between items-center bg-gradient-to-r from-hotPink to-orangePeach rounded-md pr-6">
+    <div className="md:flex justify-between items-center bg-gradient-to-r from-hotPink to-orangePeach rounded-md pr-6">
       <div>
         <img src={sample1} alt="" />
       </div>
