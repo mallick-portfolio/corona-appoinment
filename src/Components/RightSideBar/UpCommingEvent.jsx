@@ -2,7 +2,7 @@ import React from "react";
 
 const UpCommingEvent = () => {
   return (
-    <div className=" border-2 px-6 sm:px-0 border-[#EDEBEB] bg-white  rounded-md pt-4">
+    <div className=" border-2 mx-6 sm:mx-0 border-[#EDEBEB] bg-white  rounded-md pt-4">
       <h1 className="text-primary text-[16px] pl-4 font-medium mb-4">
         Upcoming Appointments
       </h1>

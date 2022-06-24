@@ -6,7 +6,7 @@ const Todos = () => {
   return (
     <>
       <div className="flex justify-between items-center py-8">
-        <div className="text-secondary text-[14px] flex items-center">
+        <div className="text-secondary text-[14px] flex sm:items-center items-start">
           <img className="mr-3" src={uncheck} alt="" /> <span>Select All</span>
         </div>
         <div className="flex mr-2 items-center px-2 py-1 text-white text-[14px] rounded-md whitespace-nowrap bg-gradient-to-r from-hotPink to-orangePeach">
@@ -14,7 +14,7 @@ const Todos = () => {
         </div>
       </div>
       <div className="flex justify-between items-center">
-        <div className="text-secondary text-[14px] flex items-center">
+        <div className="text-secondary text-[14px] flex sm:items-center items-start">
           <img className="mr-3" src={completed} alt="" />{" "}
           <h5>
             Select Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
@@ -23,7 +23,7 @@ const Todos = () => {
         </div>
       </div>
       <div className="flex my-3 justify-between items-center">
-        <div className="text-secondary text-[14px] flex items-center">
+        <div className="text-secondary text-[14px] flex sm:items-center items-start">
           <img className="mr-3" src={uncheck} alt="" />{" "}
           <h5>
             Select Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
@@ -32,7 +32,7 @@ const Todos = () => {
         </div>
       </div>
       <div className="flex my-3 justify-between items-center">
-        <div className="text-secondary text-[14px] flex items-center">
+        <div className="text-secondary text-[14px] flex sm:items-center items-start">
           <img className="mr-3" src={uncheck} alt="" />{" "}
           <h5>
             Select Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
@@ -41,7 +41,7 @@ const Todos = () => {
         </div>
       </div>
       <div className="flex my-3 justify-between items-center">
-        <div className="text-secondary text-[14px] flex items-center">
+        <div className="text-secondary text-[14px] flex sm:items-center items-start">
           <img className="mr-3" src={uncheck} alt="" />{" "}
           <h5>
             Select Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
@@ -50,7 +50,7 @@ const Todos = () => {
         </div>
       </div>
       <div className="flex my-3 justify-between items-center">
-        <div className="text-secondary text-[14px] flex items-center">
+        <div className="text-secondary text-[14px] flex sm:items-center items-start">
           <img className="mr-3" src={uncheck} alt="" />{" "}
           <h5>
             Select Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}

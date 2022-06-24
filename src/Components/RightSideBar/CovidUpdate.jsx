@@ -20,7 +20,7 @@ const CovidUpdate = () => {
         <div className="sm:w-1/2 w-full">
           <img className="mx-auto" src={sample2} alt="" />
         </div>
-        <div className="bg-gradient-to-r from-hotPink to-orangePeach sm:w-1/2  lg:h-[190px] md:h-auto lg:overflow-y-scroll text-center text-[#FBFBFB] font-medium rounded-md upcomming-appoinment grid md:grid-cols-2 lg:grid-cols-1">
+        <div className="bg-gradient-to-r from-hotPink to-orangePeach sm:w-1/2  lg:h-[190px] md:h-auto lg:overflow-y-scroll text-center text-[#FBFBFB] font-medium rounded-md covid-scroll grid md:grid-cols-2 lg:grid-cols-1">
           <div className="pt-4 pb-2">
             <h4 className="text-[14px]">Infection Number</h4>
             <h4 className="text-[34px]">500</h4>

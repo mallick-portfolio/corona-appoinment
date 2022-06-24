@@ -17,7 +17,7 @@ const TopBar = ({ show, setShow }) => {
           />
         )}
       </div>
-      <h1 className="font-[600] ml-3 text-[24px] text-primary">Home</h1>
+      <h1 className="font-[600] sm:ml-3 text-[24px] sm:text-primary text-white">Home</h1>
       <div className="flex items-center">
         <div className="mr-10">
           <img src={toggle} alt="togglebtn" />

@@ -31,6 +31,43 @@
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #ffffff;
 }
+
+
+
+.covid-scroll::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  background-color: #f5f5f5;
+}
+
+.covid-scroll::-webkit-scrollbar {
+  width: 5px;
+  background-color: #f5f5f5;
+}
+
+.covid-scroll::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #ff7590;
+}
+
+.covid-scroll::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  background-color: #f5f5f5;
+}
+
+.covid-scroll::-webkit-scrollbar {
+  width: 4px;
+  background-color: #f5f5f5;
+}
+
+.covid-scroll::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient(to right, #FF7594 , #FF7C65);
+}
+
 .upcomming-item::after {
   content: "";
   left: 20px;
@@ -51,8 +88,8 @@
 }
 @media (max-width: 390px) {
   .header-fixed {
-    position: fixed;
-    top: 0;
+    /* position: fixed;
+    top: 0; */
     background-image: linear-gradient(to right, #FF7594 , #FF7C65);
     z-index: 40;
   }
