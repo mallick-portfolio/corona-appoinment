@@ -2,8 +2,8 @@ import React from "react";
 
 const UpCommingEvent = () => {
   return (
-    <div className=" border-2 mx-6 md:mx-0 border-[#EDEBEB] bg-white  rounded-md pt-4">
-      <h1 className="text-primary text-[16px] pl-4 font-medium mb-4">
+    <div className=" border-2 mx-6 md:mx-0 border-[#EDEBEB] bg-white dark:bg-[#2C2222]  rounded-md pt-4">
+      <h1 className="text-primary dark:text-[#FFFFFF] text-[16px] pl-4 font-medium mb-4">
         Upcoming Appointments
       </h1>
       <div className="xl:h-[590px] lg:h-[550px] h-[468px] overflow-y-scroll text-center text-[#FBFBFB] font-medium rounded-md upcomming-appoinment">
@@ -25,17 +25,17 @@ const UpCommingEvent = () => {
                     {appoinment.month}
                   </h3>
                 </div>
-                <div className="rounded-md border-2 border-[#FDDAD6] xl:py-4 lg:py-1 -ml-5 pl-6 z-0 w-full bg-[#FFF5F5] text-left">
-                  <h3 className="text-[#384449] font-medium text-[16px]">
+                <div className="rounded-md border-2 border-[#FDDAD6] xl:py-4 lg:py-1 -ml-5 pl-6 z-0 w-full bg-[#FFF5F5] dark:bg-[#413838] text-left">
+                  <h3 className="text-[#384449] dark:text-white font-medium text-[16px]">
                     {appoinment.doctor}
                   </h3>
-                  <h4 className="text-secondary text-[13px] pt-1 md:pb-3">
+                  <h4 className="text-secondary dark:text-white text-[13px] pt-1 md:pb-3">
                     {appoinment.specialist}
                   </h4>
                   <div className="flex items-center gap-4">
                     <div className="flex gap-2 items-center bg-white font-medium  py-1 px-2">
                       <span className="text-accent">Slot</span>
-                      <span className="text-[#384449]">{appoinment.Slot}</span>
+                      <span className="text-[#384449]">{appoinment.slot}</span>
                     </div>
                     <div className="flex gap-2 items-center bg-white font-medium  py-1 px-2">
                       <span className="text-accent">Time</span>

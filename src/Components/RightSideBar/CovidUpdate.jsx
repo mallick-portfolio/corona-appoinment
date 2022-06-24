@@ -2,18 +2,20 @@ import React from "react";
 import sample2 from "../../assets/images/Svg_sample2.png";
 const CovidUpdate = () => {
   return (
-    <div className=" my-2 bg-white md:h-[300px] px-4 mx-6 md:mx-0 py-4 pt-4 rounded-md border-[#EDEBEB] border-2">
+    <div className=" my-2 bg-white dark:bg-[#2C2222] md:h-[300px] px-4 mx-6 md:mx-0 py-4 pt-4 rounded-md border-[#EDEBEB] border-2">
       <div className="flex flex-col md:flex-row justify-between items-center">
         <div className="w-full text-left">
-          <h3 className="md:text-[#2E1619] text-[#FF7594] font-medium md:text-[14px] text-[20px] mb-4 md:mb-0">
+          <h3 className="md:text-[#2E1619] dark:text-white text-[#FF7594] font-medium md:text-[14px] text-[20px] mb-4 md:mb-0">
             Covid-19 Updates
           </h3>
         </div>
         <div className="text-left md:text-right w-full">
-          <h3 className="text-[#2E1619] font-medium text-[14px]">
+          <h3 className="text-[#2E1619] dark:text-white font-medium text-[14px]">
             10 September 2022
           </h3>
-          <h4 className="text-accent text-[14px]">Thursday 10:00:00 AM</h4>
+          <h4 className="text-accent dark:text-white text-[14px]">
+            Thursday 10:00:00 AM
+          </h4>
         </div>
       </div>
       <div className="flex flex-col md:flex-row justify-between items-center">

@@ -2,10 +2,10 @@ import React from "react";
 import toggle from "../../assets/images/togglebutton.png";
 import Toggle from "../../assets/images/Toggle button.png";
 import avatar from "../../assets/images/Avatar.png";
+import darkavatar from "../../assets/images/dark/Avatar.png";
 import downarrow from "../../assets/images/downarrow.png";
 import Icon_Menu from "../../assets/images/Icon_Menu.png";
 const TopBar = ({ show, setShow, theme, setTheme }) => {
-  
   return (
     <div className="header-fixed w-full flex justify-between items-center py-6 px-4 z-50 md:px-0">
       <div className="block md:hidden">
@@ -38,7 +38,7 @@ const TopBar = ({ show, setShow, theme, setTheme }) => {
           )}
         </div>
         <div className="flex items-center">
-          <img src={avatar} alt="" />
+          <img src={theme === "dark" ? darkavatar : avatar} alt="" />
           <img src={downarrow} alt="" />
         </div>
       </div>

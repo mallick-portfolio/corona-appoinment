@@ -5,15 +5,15 @@ import Todos from "./Todos.jsx";
 
 const TodoList = () => {
   return (
-    <div className="bg-white my-8 md:my-0 px-3 xl:px-4 lg:px-2 xl:pb-24 lg:py-4 xl:pt-8 rounded-md mx-6 md:mx-0 border-2">
-      <h1 className="text-secondary text-[16px] font-medium mb-2 pt-4 md:pt-0">
+    <div className="bg-white dark:bg-[#2C2222] my-8 md:my-0 px-3 xl:px-4 lg:px-2 xl:pb-24 lg:py-4 xl:pt-8 rounded-md mx-6 md:mx-0 border-2 border-[#EDEBEB] dark:border-[#392C2B]">
+      <h1 className="text-secondary dark:text-[#D1D5DB] text-[16px] font-medium mb-2 pt-4 md:pt-0">
         To-Do List
       </h1>
       <div className="xl:flex justify-between">
         <div className="relative grow w-full">
           <input
             type="text"
-            className="w-full h-[76px] pl-4 rounded-md border[#EDEBEB] border-2 outline-none text-secondary"
+            className="w-full h-[76px] pl-4 rounded-md border[#EDEBEB] border-2 outline-none text-secondary dark:bg-[#959190]"
           />
           <img className="absolute bottom-2 right-2 block lg:hidden" src={add} alt="" />
         </div>

@@ -20,8 +20,8 @@ const RightSideBar = ({ show, setShow, theme, setTheme }) => {
         className={`xl:flex items-stretch justify-between ${show ? "xl:gap-4" : "xl:gap-16"}`}
       >
         <div className="basis-3/5 flex-1">
-          <Banner />
-          <PatientInfo />
+          <Banner  />
+          <PatientInfo theme={theme} />
           <div className="flex flex-col-reverse lg:flex-row lg:gap-2">
             <div className="lg:w-1/2 xl:w-full">
               <TodoList />
