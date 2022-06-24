@@ -1,14 +1,18 @@
 module.exports = {
+  darkMode: 'class',
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     screens: {
       'sm': '391px',
       // => @media (min-width: 390px) { ... }
 
-      'md': '834px',
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+      
+      'lg': '834px',
       // => @media (min-width: 834px) { ... }
 
-      'lg': '1512px',
+      'xl': '1512px',
      // => @media (min-width: 1512px) { ... }
     },
     extend: {

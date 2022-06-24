@@ -6,33 +6,33 @@ import PatientInfo from "./PatientInfo.jsx";
 import TodoList from "./TodoList.jsx";
 import UpCommingEvent from "./UpCommingEvent.jsx";
 
-const RightSideBar = ({ show, setShow }) => {
+const RightSideBar = ({ show, setShow, theme, setTheme }) => {
   return (
     <div
-      className={`smooth-transition sm:bg-[#E5E5E5] min-h-screen sm:px-6 text-white pb-12 ${
+      className={`smooth-transition md:bg-[#E5E5E5] dark:bg-[#150A09] min-h-screen md:px-6 text-white pb-12 ${
         !show
-          ? "lg:ml-24 lg:pl-8 md:ml-20 md:pl-8"
-          : "lg:ml-64 lg:pl-6  md:ml-20 md:pl-8"
+          ? "xl:ml-24 xl:pl-8 lg:ml-20 lg:pl-8"
+          : "xl:ml-64 xl:pl-6  lg:ml-20 lg:pl-8"
       }`}
     >
-      <TopBar show={show} setShow={setShow} />
+      <TopBar theme={theme} setTheme={setTheme} show={show} setShow={setShow} />
       <div
-        className={`lg:flex justify-between ${show ? "lg:gap-4" : "lg:gap-16"}`}
+        className={`xl:flex items-stretch justify-between ${show ? "xl:gap-4" : "xl:gap-16"}`}
       >
-        <div className="basis-3/5">
+        <div className="basis-3/5 flex-1">
           <Banner />
           <PatientInfo />
-          <div className="flex flex-col-reverse md:flex-row md:gap-2">
-            <div className="md:w-1/2 lg:w-full">
+          <div className="flex flex-col-reverse lg:flex-row lg:gap-2">
+            <div className="lg:w-1/2 xl:w-full">
               <TodoList />
             </div>
-            <div className="lg:hidden md:block md:w-1/2 lg:w-full">
+            <div className="xl:hidden lg:block lg:w-1/2 xl:w-full">
               <UpCommingEvent />
             </div>
           </div>
         </div>
-        <div className="basis-2/5 rounded-md">
-          <div className="hidden lg:block">
+        <div className="basis-2/5 flex-1 rounded-md">
+          <div className="hidden xl:block">
             <UpCommingEvent />
           </div>
           <CovidUpdate />

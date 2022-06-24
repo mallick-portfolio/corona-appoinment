@@ -2,34 +2,34 @@ import React from "react";
 
 const UpCommingEvent = () => {
   return (
-    <div className=" border-2 mx-6 sm:mx-0 border-[#EDEBEB] bg-white  rounded-md pt-4">
+    <div className=" border-2 mx-6 md:mx-0 border-[#EDEBEB] bg-white  rounded-md pt-4">
       <h1 className="text-primary text-[16px] pl-4 font-medium mb-4">
         Upcoming Appointments
       </h1>
-      <div className="lg:h-[590px] md:h-[550px] overflow-y-scroll text-center text-[#FBFBFB] font-medium rounded-md upcomming-appoinment">
-        <ul className="relative upcomming-item lg:px-4 md:px-1">
+      <div className="xl:h-[590px] lg:h-[550px] h-[468px] overflow-y-scroll text-center text-[#FBFBFB] font-medium rounded-md upcomming-appoinment">
+        <ul className="relative upcomming-item xl:px-4 lg:px-1">
           {appoinments.map((appoinment) => (
             <li key={appoinment.id} className="relative upcomming-list">
               <div
                 className={`absolute w-[25px] z-10 h-[25px] ${appoinment.color} rounded-full -left-2 top-1/2 border-[5px] border-white`}
               ></div>
               <div className="flex items-center  rounded-lg mx-4 my-4">
-                <div className="bg-white sm:p-4 p-2 rounded-lg z-10 border-[#EDEBEB] border-2">
+                <div className="bg-white md:p-4 p-2 rounded-lg z-10 border-[#EDEBEB] border-2">
                   <h5 className="text-secondary text-[13px]">
                     {appoinment.year}
                   </h5>
-                  <h4 className="text-secondary py-1 sm:py-2 text-[20px]">
+                  <h4 className="text-secondary py-1 md:py-2 text-[20px]">
                     {appoinment.date}
                   </h4>
                   <h3 className="text-secondary text-[20px]">
                     {appoinment.month}
                   </h3>
                 </div>
-                <div className="rounded-md border-2 border-[#FDDAD6] lg:py-4 md:py-1 -ml-5 pl-6 z-0 w-full bg-[#FFF5F5] text-left">
+                <div className="rounded-md border-2 border-[#FDDAD6] xl:py-4 lg:py-1 -ml-5 pl-6 z-0 w-full bg-[#FFF5F5] text-left">
                   <h3 className="text-[#384449] font-medium text-[16px]">
                     {appoinment.doctor}
                   </h3>
-                  <h4 className="text-secondary text-[13px] pt-1 sm:pb-3">
+                  <h4 className="text-secondary text-[13px] pt-1 md:pb-3">
                     {appoinment.specialist}
                   </h4>
                   <div className="flex items-center gap-4">
