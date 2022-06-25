@@ -7,8 +7,9 @@ function App() {
   const [show, setShow] = useState(false);
   const [theme, setTheme] = useState("light");
   useEffect(() => {
+    const theme = localStorage.getItem("theme");
+    setTheme(theme);
     const root = window.document.documentElement;
-    console.log(root)
     const isDark = theme === "dark";
     
 

@@ -14,7 +14,7 @@ const UpCommingEvent = () => {
                 className={`absolute w-[25px] z-10 h-[25px] ${appoinment.color} rounded-full -left-1 sm:-left-2 top-1/2 border-[5px] border-white dark:border-[#2C2222] `}
               ></div>
               <div className="flex items-center  rounded-lg mx-4 my-4">
-                <div className="bg-white xl:p-4 md:p-3 p-2 rounded-lg z-10 border-[#EDEBEB] border-2">
+                <div className="bg-white xl:p-4 md:p-3 p-2 rounded-xl z-10 border-[#EDEBEB] border-2">
                   <h5 className="text-secondary text-[13px]">
                     {appoinment.year}
                   </h5>

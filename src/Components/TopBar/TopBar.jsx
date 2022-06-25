@@ -25,13 +25,19 @@ const TopBar = ({ show, setShow, theme, setTheme }) => {
         <div className="mr-10">
           {theme !== "dark" ? (
             <img
-              onClick={() => setTheme("dark")}
+              onClick={() => {
+                localStorage.setItem("theme", "dark");
+                setTheme("dark");
+              }}
               src={toggle}
               alt="togglebtn"
             />
           ) : (
             <img
-              onClick={() => setTheme("light")}
+              onClick={() => {
+                localStorage.setItem("theme", "light");
+                setTheme("light");
+              }}
               src={Toggle}
               alt="togglebtn"
             />

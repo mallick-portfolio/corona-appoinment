@@ -3,6 +3,7 @@ import Icon_Menu from "../../assets/images/Icon_Menu.png";
 import dark_Menu from "../../assets/images/darkmenu.png";
 import logo from "../../assets/images/Vector.png";
 import home from "../../assets/images/home.png";
+import darkhome from "../../assets/images/dark/darkHome.png";
 import sideArrow from "../../assets/images/sideArrow.png";
 import darkarrow from "../../assets/images/darkarrow.png";
 import profile from "../../assets/images/profile.png";
@@ -50,7 +51,11 @@ const SideNavbar = ({ show, setShow, theme }) => {
       <nav className={`text-[16px] font-[500] overflow-hidden`}>
         <ul>
           <li className="flex items-center py-2">
-            <img className="mr-10 ml-8" src={home} alt="home" />
+            <img
+              className="mr-10 ml-8"
+              src={theme === "dark" ? darkhome : home}
+              alt="home"
+            />
             <span className="text-[#FF7594] dark:text-white whitespace-nowrap">
               Home
             </span>
