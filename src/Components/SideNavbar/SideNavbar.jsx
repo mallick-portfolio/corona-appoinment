@@ -2,7 +2,6 @@ import React from "react";
 import Icon_Menu from "../../assets/images/Icon_Menu.png";
 import dark_Menu from "../../assets/images/darkmenu.png";
 import logo from "../../assets/images/Vector.png";
-import brand from "../../assets/images/MediDoc.png";
 import home from "../../assets/images/home.png";
 import sideArrow from "../../assets/images/sideArrow.png";
 import darkarrow from "../../assets/images/darkarrow.png";
@@ -35,7 +34,9 @@ const SideNavbar = ({ show, setShow, theme }) => {
         {show && (
           <div className="flex mt-2">
             <img className="mr-8 ml-10" src={logo} alt="logo" />
-            <img className="w-[106px] h-[34px]" src={brand} alt="brand" />
+            <h1 className="text-[#384449] dark:text-white text-[24px] font-bold">
+              Medi<span className="text-[#FF7594]">Doc</span>
+            </h1>
             <img
               className="absolute -right-5 cursor-pointer z-50"
               onClick={() => setShow(!show)}
@@ -50,7 +51,9 @@ const SideNavbar = ({ show, setShow, theme }) => {
         <ul>
           <li className="flex items-center py-2">
             <img className="mr-10 ml-8" src={home} alt="home" />
-            <span className="text-[#FF7594] dark:text-white whitespace-nowrap">Home</span>
+            <span className="text-[#FF7594] dark:text-white whitespace-nowrap">
+              Home
+            </span>
           </li>
           <li className="flex items-center py-2">
             <img

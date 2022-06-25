@@ -2,7 +2,7 @@ import React from "react";
 
 const UpCommingEvent = () => {
   return (
-    <div className=" border-2 mx-6 md:mx-0 border-[#EDEBEB] bg-white dark:bg-[#2C2222]  rounded-md pt-4">
+    <div className=" border-2 mx-4 md:mx-0 border-[#EDEBEB] bg-white dark:bg-[#2C2222] dark:border-[#2C2222] rounded-md pt-4">
       <h1 className="text-primary dark:text-[#FFFFFF] text-[16px] pl-4 font-medium mb-4">
         Upcoming Appointments
       </h1>
@@ -11,10 +11,10 @@ const UpCommingEvent = () => {
           {appoinments.map((appoinment) => (
             <li key={appoinment.id} className="relative upcomming-list">
               <div
-                className={`absolute w-[25px] z-10 h-[25px] ${appoinment.color} rounded-full -left-2 top-1/2 border-[5px] border-white`}
+                className={`absolute w-[25px] z-10 h-[25px] ${appoinment.color} rounded-full -left-1 sm:-left-2 top-1/2 border-[5px] border-white dark:border-[#2C2222] `}
               ></div>
               <div className="flex items-center  rounded-lg mx-4 my-4">
-                <div className="bg-white md:p-4 p-2 rounded-lg z-10 border-[#EDEBEB] border-2">
+                <div className="bg-white xl:p-4 md:p-3 p-2 rounded-lg z-10 border-[#EDEBEB] border-2">
                   <h5 className="text-secondary text-[13px]">
                     {appoinment.year}
                   </h5>
@@ -25,21 +25,21 @@ const UpCommingEvent = () => {
                     {appoinment.month}
                   </h3>
                 </div>
-                <div className="rounded-md border-2 border-[#FDDAD6] xl:py-4 lg:py-1 -ml-5 pl-6 z-0 w-full bg-[#FFF5F5] dark:bg-[#413838] text-left">
+                <div className="rounded-md border-2 border-[#FDDAD6] xl:py-4 py-3 lg:py-2 -ml-5 pl-6 z-0 w-full bg-[#FFF5F5] dark:bg-[#413838] text-left">
                   <h3 className="text-[#384449] dark:text-white font-medium text-[16px]">
                     {appoinment.doctor}
                   </h3>
-                  <h4 className="text-secondary dark:text-white text-[13px] pt-1 md:pb-3">
+                  <h4 className="text-secondary dark:text-white text-[13px] xl:pt-1 lg:pt-0 xl:pb-3 mb-1 lg:pb-0">
                     {appoinment.specialist}
                   </h4>
-                  <div className="flex items-center gap-4">
-                    <div className="flex gap-2 items-center bg-white font-medium  py-1 px-2">
-                      <span className="text-accent">Slot</span>
-                      <span className="text-[#384449]">{appoinment.slot}</span>
+                  <div className="flex items-center gap-1">
+                    <div className="flex gap-2 items-center bg-white rounded-md  font-medium  py-1 px-2">
+                      <span className="text-accent text-[14px]">Slot</span>
+                      <span className="text-[#384449] text-[10px]">{appoinment.slot}</span>
                     </div>
-                    <div className="flex gap-2 items-center bg-white font-medium  py-1 px-2">
-                      <span className="text-accent">Time</span>
-                      <span className="text-[#384449]">{appoinment.time}</span>
+                    <div className="flex gap-2 items-center bg-white rounded-md  font-medium  py-1 px-2">
+                      <span className="text-accent text-[14px]">Time</span>
+                      <span className="text-[#384449] text-[10px]">{appoinment.time}</span>
                     </div>
                   </div>
                 </div>

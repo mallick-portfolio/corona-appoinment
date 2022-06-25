@@ -70,12 +70,12 @@
 
 .upcomming-item::after {
   content: "";
-  left: 20px;
-  top: 70px;
+  left: 8px;
+  top: 80px;
   position: absolute;
   width: 1px;
   height: calc(100% - 130px);
-  background-color: #edebeb;
+  background-color: #EDEBEB;
   z-index: 0;
 }
 
@@ -83,6 +83,13 @@
   .upcomming-item::after {
     content: "";
     left: 8px;
+    width: 1px;
+  }
+}
+@media (min-width: 1512px) {
+  .upcomming-item::after {
+    content: "";
+    left: 20px;
     width: 1px;
   }
 }
