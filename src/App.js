@@ -8,10 +8,14 @@ function App() {
   const [theme, setTheme] = useState("light");
   useEffect(() => {
     const root = window.document.documentElement;
+    console.log(root)
     const isDark = theme === "dark";
+    
 
     root.classList.remove(isDark ? "light" : "dark");
     root.classList.add(theme);
+    document.documentElement.setAttribute('data-theme', theme);
+
   }, [theme]);
   return (
     <div className="overflow-hidden">

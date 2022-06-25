@@ -6,7 +6,7 @@ const UpCommingEvent = () => {
       <h1 className="text-primary dark:text-[#FFFFFF] text-[16px] pl-4 font-medium mb-4">
         Upcoming Appointments
       </h1>
-      <div className="xl:h-[590px] lg:h-[550px] h-[468px] overflow-y-scroll text-center text-[#FBFBFB] font-medium rounded-md upcomming-appoinment">
+      <div className="xl:h-[590px] lg:h-[550px] h-[468px] overflow-y-scroll text-center text-[#FBFBFB] font-medium rounded-md upcomming-appoinment ">
         <ul className="relative upcomming-item xl:px-4 lg:px-1">
           {appoinments.map((appoinment) => (
             <li key={appoinment.id} className="relative upcomming-list">
