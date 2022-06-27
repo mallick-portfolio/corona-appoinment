@@ -15,7 +15,7 @@ const TodoList = () => {
             type="text"
             className="w-full h-[76px] pl-4 rounded-md border[#EDEBEB] border-2 outline-none text-secondary dark:bg-[#959190]"
           />
-          <img className="absolute bottom-2 right-2 block lg:hidden" src={add} alt="" />
+          <img className="absolute bottom-2 right-2 block xl:hidden" src={add} alt="" />
         </div>
         <div className="lg:ml-4 flex-none mr-3 hidden xl:block ">
           <button
